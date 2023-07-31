@@ -6,7 +6,7 @@ function Filter({ value, onChangeFilter }) {
   return (
     <FilterCont>
       <Label>
-        Find contacts by name
+        Find contacts by name or phone number
         <Input type="text" value={value} onChange={onChangeFilter} />
       </Label>
     </FilterCont>

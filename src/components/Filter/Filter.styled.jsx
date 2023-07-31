@@ -7,13 +7,15 @@ export const FilterCont = styled.div`
 export const Label = styled.label`
   color: #000;
   font-size: 20px;
+  margin-left: 15px;
+  font-weight: 500;
 `;
 
 export const Input = styled.input`
-  width: 400px;
-  margin-top: 10px;
+  width: 408px;
   padding: 8px;
-  margin: 0 auto;
+  margin: 15px auto;
   border-radius: 8px;
   border: 3px solid #fba003;
+  font-size: 20px;
 `;

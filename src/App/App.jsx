@@ -6,7 +6,6 @@ import { Container, Title, SubTitle, Wrapper } from './App.styled';
 import { nanoid } from 'nanoid';
 import Notiflix from 'notiflix';
 
-
 export class App extends Component {
   state = {
     contacts: [
@@ -17,7 +16,7 @@ export class App extends Component {
     ],
     filter: '',
   };
-removeContact = contactId => {
+  removeContact = contactId => {
     this.setState(prevState => {
       return {
         contacts: prevState.contacts.filter(({ id }) => id !== contactId),
@@ -35,7 +34,7 @@ removeContact = contactId => {
     );
 
     if (isInContacts) {
-      Notiflix.Notify.warning(`${contact.name} is already in contacts`);;
+      Notiflix.Notify.warning(`${contact.name} is already in contacts`);
       return;
     }
     this.setState(prevState => ({
@@ -47,8 +46,10 @@ removeContact = contactId => {
     const { filter, contacts } = this.state;
     const normalizedFilter = filter.toLowerCase();
 
-    return contacts.filter(contact =>
-      contact.name.toLowerCase().includes(normalizedFilter)
+    return contacts.filter(
+      contact =>
+        contact.name.toLowerCase().includes(normalizedFilter) ||
+        contact.number.includes(filter)
     );
   };
 
@@ -76,4 +77,4 @@ removeContact = contactId => {
       </Container>
     );
   }
-};
+}
