@@ -34,7 +34,7 @@ export class App extends Component {
     );
 
     if (isInContacts) {
-      Notiflix.Notify.warning(`${contact.name} is already in contacts`);
+      Notiflix.Notify.info(`${contact.name} is already in contacts`);
       return;
     }
     this.setState(prevState => ({

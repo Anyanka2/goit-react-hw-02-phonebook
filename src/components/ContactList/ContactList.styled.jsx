@@ -14,7 +14,7 @@ export const List = styled.ul`
 
 export const Item = styled.li`
   background-color: #fff;
-  border: 3px solid #e88606;
+  border: 2px solid #e88606;
   padding: 6px;
   border-radius: 8px;
   margin-bottom: 5px;

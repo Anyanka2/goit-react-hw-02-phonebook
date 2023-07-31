@@ -16,6 +16,12 @@ export const Input = styled.input`
   padding: 8px;
   margin: 15px auto;
   border-radius: 8px;
-  border: 3px solid #fba003;
+  border: none;
+  border: 3px solid #dfeff5;
   font-size: 20px;
+
+   &:focus{
+  outline: none;
+  border: 3px solid #e88606;
+  }
 `;

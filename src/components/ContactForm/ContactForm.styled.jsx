@@ -13,9 +13,16 @@ export const Form = styled.form`
 export const Input = styled.input`
   margin-top: 10px;
   padding: 6px 10px;
+  border: none;
+  border: 1px solid #e88606;
   border-radius: 5px;
   font: inherit;
   cursor: pointer;
+
+  &:focus{
+  outline: none;
+  border: 2px solid #e88606;
+  }
 `;
 export const Label = styled.label`
   display: flex;
