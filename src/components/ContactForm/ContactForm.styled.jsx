@@ -14,7 +14,7 @@ export const Input = styled.input`
   margin-top: 10px;
   padding: 6px 10px;
   border: none;
-  border: 1px solid #e88606;
+  border: 2px solid #dfeff5;
   border-radius: 5px;
   font: inherit;
   cursor: pointer;
@@ -22,6 +22,7 @@ export const Input = styled.input`
   &:focus{
   outline: none;
   border: 2px solid #e88606;
+  background-color: #fff;
   }
 `;
 export const Label = styled.label`
@@ -42,7 +43,7 @@ export const Button = styled.button`
  
   &:hover,
   &:focus {
-    color: #ffffff;
+    color: #fff;
     background-color: #e88606;
     cursor: pointer;
   }
